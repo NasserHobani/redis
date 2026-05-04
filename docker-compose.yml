@@ -23,3 +23,5 @@ services:
     command: rq worker rag_queue
     depends_on:
       - redis
+    environment:
+      - REDIS_URL=redis://redis:6379
