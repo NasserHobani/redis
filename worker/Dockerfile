@@ -7,4 +7,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ["rq", "worker", "rag_queue"]
+CMD ["rq", "worker", "rag_queue", "--url", "redis://redis:6379"]
